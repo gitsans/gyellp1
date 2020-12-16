@@ -10,11 +10,11 @@ void main() {
     "/LGA": (BuildContext context) => new LGA(),
 //    "/BTA": (BuildContext context) => new BTA(),
 //    "/RGA": (BuildContext context) => new RGA(),
-//    "/I16": (BuildContext context) => new I16(),
-//    "/I17": (BuildContext context) => new I17(),
-//    "/I18": (BuildContext context) => new I18(),
-//    "/I19": (BuildContext context) => new I19(),
-//    "/I20": (BuildContext context) => new I20(),
+    "/I16": (BuildContext context) => new I16(),
+    "/I17": (BuildContext context) => new I17(),
+    "/I18": (BuildContext context) => new I18(),
+    "/I19": (BuildContext context) => new I19(),
+    "/I20": (BuildContext context) => new I20(),
     //"/L16": (BuildContext context) => new L16(),
 //    "/L17": (BuildContext context) => new L17(),
 //    "/L18": (BuildContext context) => new L18(),
@@ -58,39 +58,35 @@ class RunwayConditions extends StatelessWidget {
       ),
       body: Column(
         children: <Widget>[
-          Row(
-            children: <Widget>[
-              RaisedButton(
-                child: Text('Indira Gandhi International Airport'),
-                onPressed: () {
-                  Navigator.of(context).pushNamed("/IGIA");
-                },
-              ),
-              RaisedButton(
-                child: Text('Rajiv Gandhi Airport'),
-                onPressed: () {
-                  //Navigator.of(context).pushNamed("/RGA");
-                },
-              ),
-              RaisedButton(
-                child: Text('Chatrapati Shivaji Airport'),
-                onPressed: () {
-                  //Navigator.of(context).pushNamed("/CSA");
-                },
-              ),
-              RaisedButton(
-                child: Text('Bir Tikendrajit Airport'),
-                onPressed: () {
-                  //Navigator.of(context).pushNamed("/BTA");
-                },
-              ),
-              RaisedButton(
-                child: Text('Lokpriya Gopinath Airport'),
-                onPressed: () {
-                  Navigator.of(context).pushNamed("/LGA");
-                },
-              ),
-            ],
+          RaisedButton(
+            child: Text('Indira Gandhi International Airport'),
+            onPressed: () {
+              Navigator.of(context).pushNamed("/IGIA");
+            },
+          ),
+          RaisedButton(
+            child: Text('Rajiv Gandhi Airport'),
+            onPressed: () {
+              //Navigator.of(context).pushNamed("/RGA");
+            },
+          ),
+          RaisedButton(
+            child: Text('Chatrapati Shivaji Airport'),
+            onPressed: () {
+              //Navigator.of(context).pushNamed("/CSA");
+            },
+          ),
+          RaisedButton(
+            child: Text('Bir Tikendrajit Airport'),
+            onPressed: () {
+              //Navigator.of(context).pushNamed("/BTA");
+            },
+          ),
+          RaisedButton(
+            child: Text('Lokpriya Gopinath Airport'),
+            onPressed: () {
+              Navigator.of(context).pushNamed("/LGA");
+            },
           ),
         ],
       ),
